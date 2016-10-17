@@ -1,0 +1,34 @@
+$ten_px: 10px;
+$grey: #ddd;
+$dodger_blue: #1E90FF;
+
+.search-bar {
+  margin: 20px;
+  text-align: center;
+  input {
+    width: 60%;
+    border-top: 0px;
+    border-left: 0px;
+    cursor: text;
+    border-right: 0px;
+    border-bottom: 2px solid $grey;
+  }
+}
+
+.video-item img {
+  max-width: 64px;
+}
+
+.video-detail .details {
+  margin-top: $ten_px;
+  padding: $ten_px;
+  border: 1px solid $grey;
+  border-radius: 4px;
+}
+
+.list-group-item {
+  cursor: pointer;
+  &:hover {
+    background-color: #eee;
+  }
+}

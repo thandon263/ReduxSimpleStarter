@@ -9,9 +9,8 @@ class SearchBar extends Component {
 
   render() {
     return (
-      <div>
-        {this.state.term}
-        <input onChange={(event) => this.setState({ term: event.target.value})} />
+      <div className="search-bar">
+        <input placeholder="Search e.g 'Donald Trump's latest' " onChange={(event) => this.setState({ term: event.target.value})} />
       </div>
     );
   }
