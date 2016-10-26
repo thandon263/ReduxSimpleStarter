@@ -78,8 +78,9 @@ body {
 }
 
 .analytics {
-  height: 200px;
+  height: 510px;
   width: 50%;
+  margin: -40px 4px 0 10%;
 }
 
 .pre-auth {

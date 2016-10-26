@@ -24,6 +24,7 @@
   </header>
     <div class="container"></div>
     <div class="analytics">
+    	<a class="twitter-timeline" width="500px" height="500px" href="https://twitter.com/YouTube">Tweets by YouTube</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
     	<div id="login-container" class="pre-auth">This application requires access to your YouTube account.
 		    Please <a href="#" id="login-link">authorize</a> to continue.
 	  </div>
@@ -34,6 +35,31 @@
 		    <ul id="video-list"></ul>
 		  </div>
 	    </div>
+
+	    <div class="content"></div>
+
+	    <script type="text/javascript">
+	    	$('document').on('load', function() {
+
+	    		$.ajax({
+	    			url: 'http://thandon263.github.io',
+	    			method: "GET",
+	    			data: {},
+	    			dataType: 'JSON',
+	    			success: function() {
+	    				console.log("Complete - Loading successful");
+	    			}
+
+	    			}).done(function(data){
+	    				console.log(data);
+	    			}).fail(function(){
+	    				console.log("Response not logged - Try again!");
+	    			}).always(function(){
+	    				console.log("Complete!");
+	    			});
+	    	});
+	    </script>
+
 <!--Footer-->
 <footer class="page-footer center-on-small-only">
 
@@ -49,8 +75,8 @@
     <div class="call-to-action">
         <ul>
             <li>
-                <h5>Register for free</h5></li>
-            <li><a href="" class="btn btn-danger">Sign up!</a></li>
+                <h5>So much more</h5></li>
+            <li><a href="" class="btn btn-danger">Navigate to Top!</a></li>
         </ul>
     </div>
     <!--/.Call to action-->
