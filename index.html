@@ -4,9 +4,21 @@
     <link rel="stylesheet" href="/style/css/style.css.css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css">
     <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   </head>
   <body>
+
+  <header class="wrapper">
+  	<span>You</span><span class="text-style">Clone it yourself</span>
+  </header>
     <div class="container"></div>
   </body>
   <script src="/bundle.js"></script>
+  <script type="text/javascript">
+  		$('.container').on('scroll', 'header' function() {
+  			$(this).removeClass('wrapper');
+  			$(this).addClass('onScrol');
+  		});
+
+  	</script>
 </html>
